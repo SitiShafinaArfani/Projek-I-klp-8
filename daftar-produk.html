@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelompok F8</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<style>
+    body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    width: 1512px;
+    height: 150px;
+    display: block;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.header {
+    background-color: #ff97de;
+    color: #ffffff;
+    padding: 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    font-size: 3.5em;
+    margin: 0;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    transition: color 0.3s, transform 0.3s;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    color: #ff4081;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+main {
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    color: #333;
+    text-transform: uppercase;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #ff4081;
+    margin-bottom: 10px;
+}
+
+section {
+    padding: 40px;
+    background: #fefefe;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.product img:hover {
+    transform: scale(1.1);
+}
+
+button {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #e33b70;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff4081;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+    nav {
+        flex-direction: column;
+    }
+    footer {
+        padding: 10px;
+    }
+}
+
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="head">
+                <img src="background.jpg" alt="background" class="image">
+                <div class="text-overlay">FIFAS 8EAUTY SKINCARE</div>
+            </div>
+        </div>
+    </div>
+    
+<nav>
+    <a href="index.html">Home</a>
+    <a href="#products">Produk</a>
+    <a href="#Contact">Contact</a>
+</nav>
+
+<main>
+    <section id="home">
+        <h2>Welcome To F8 Skincare!</h2>
+        <p>F8 Skincare is committed to providing the best skin care you need. 
+            With natural ingredients and the latest technology, the products 
+            we sell are designed to provide optimal and safe results for all 
+            skin types. Discover our range of products that can help you get 
+            healthy, radiant, and well-groomed skin.</p>
+    </section>
+</main>
+
+<main>
+    <section id="products">
+        <h2>Product List</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="ms glow.jpg" alt="MS GLOW">
+                <h3>MS GLOW SKINCARE</h3>
+                <p>Harga: Rp 5XX.XXX</p>
+                <button>Beli Sekarang</button>
+            </div>
+            <div class="product">
+                <img src="benings.jpg" alt="BENINGS">
+                <h3>BENING'S SKINCARE</h3>
+                <p>Harga: Rp 6XX.XXX</p>
+                <button>Beli Sekarang</button>
+            </div>
+            <div class="product">
+                <img src="innisfree.jpg" alt="INNISFREE">
+                <h3>INNISFREE SKINCARE</h3>
+                <p>Harga: Rp 1.6XX.XX</p>
+                <button>Beli Sekarang</button>
+            </div>
+            <div class="product">
+                <img src="laneige.jpg" alt="LANEIGE">
+                <h3>LANEIGE SKINCARE</h3>
+                <p>Harga: Rp 2.3XX.XXX</p>
+                <button>Beli Sekarang</button>
+            </div>
+            <div class="product">
+                <img src="sk-II.jpg" alt="SK-II">
+                <h3>SK-II SKINCARE</h3>
+                <p>Harga: Rp 5.5XX.XXX</p>
+                <button>Beli Sekarang</button>
+            </div>
+            <div class="product">
+                <img src="skintific.jpg" alt="SKINTIFIC">
+                <h3>SKINTIFIC SKINCARE</h3>
+                <p>Harga: Rp 5XX.XXX</p>
+                <button>Beli Sekarang</button>
+            </div>
+            <div class="product">
+                <img src="scarlett.jpg" alt="SCARLETT">
+                <h3>SCARLETT SKINCARE</h3>
+                <p>Harga: Rp 5XX.XXX</p>
+                <button>Beli Sekarang</button>
+            </div>
+            <div class="product">
+                <img src="CAMILLE.jpg" alt="CAMILLE">
+                <h3>CAMILLE SKINCARE</h3>
+                <p>Harga: Rp 8XX.XXX</p>
+                <button>Beli Sekarang</button>
+            </div>
+            <div class="product">
+                <img src="SKIN1004.jpg" alt="SKIN1004">
+                <h3>SKIN1004 SKINCARE</h3>
+                <p>Harga: Rp 6XX.XXX</p>
+                <button>Beli Sekarang</button>
+            </div>
+            <div class="product">
+                <img src="cosrx.jpg" alt="COSRX">
+                <h3>COSRX SKINCARE</h3>
+                <p>Harga: Rp 6XX.XXX</p>
+                <button>Beli Sekarang</button>
+            </div>
+            <div class="product">
+                <img src="azarine.jpg" alt="AZZARINE">
+                <h3>AZZARINE SKINCARE</h3>
+                <p>Harga: Rp 2XX.XX</p>
+                <button>Beli Sekarang</button>
+            </div>
+            <div class="product">
+                <img src="wardah.jpg" alt="WARDAH">
+                <h3>WARDAH SKINCARE</h3>
+                <p>Harga: Rp 5XX.XXX</p>
+                <button>Beli Sekarang</button>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="Contact">
+        <h2>Contact Store</h2>
+        <p>Email: storeF8@skincare.com</p>
+        <p>instagram: @f8skincare</p>
+        <p>Telepon: +999 6969 666</p>
+    </section>
+</main>
+
+<footer>
+    <p>HAPPY SHOPPING</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KELOMPOK F8</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+<style>
+    body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+body, h1, h2, h3, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    max-width: 100%;
+    height: 150px;
+    display: block;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.header {
+    background-color: #ff97de;
+    color: #ffffff;
+    padding: 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    font-size: 3.5em;
+    margin: 0;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #333;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    color: #ff4081;
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+section {
+    padding: 40px;
+    background: #fefefe;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.videocontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.video-text-wrapper1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.video-text-wrapper1 video {
+    width: 50%;
+    max-width: 100%;
+    border-radius: 10px;
+    border: 2px solid #333;
+    margin-top: 20px;
+}
+
+.video-description1 h3 {
+    font-size: 1.8em;
+    color: #ff4081;
+    margin-bottom: 10px;
+}
+
+.video-description1 p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #333;
+}
+
+.video-text-wrapper2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.video-text-wrapper2 video {
+    width: 50%;
+    max-width: 100%;
+    border-radius: 10px;
+    border: 2px solid #333;
+    margin-top: 20px;
+}
+
+.video-description2 p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #333;
+    margin-top: 20px;  
+}
+
+.news-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.news-content {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    flex: 1 1 calc(33.333% - 20px);
+}
+
+.image1, .image2, .image3 {
+    flex: 1; 
+}
+
+.news1, .news2, .news3 {
+    flex: 2; 
+    padding: 20px; 
+    padding-top: 20px;
+}
+
+.news-content img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px; 
+    transition: transform 0.3s;
+}
+
+.news-content img:hover {
+    transform: scale(1.05);
+}
+
+.about-us {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px auto;
+    max-width: 1200px;
+    text-align: left;
+    position: relative;
+}
+
+.about-us h2 {
+    font-size: 2.8em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.image-item {
+    flex: 1 1 calc(18% - 20px);
+    margin: 10px;
+    text-align: center;
+}
+
+.image-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.image-item img:hover {
+    transform: scale(1.05);
+}
+
+.image-item p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+--------
+
+h2 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #ff4081;
+    margin-bottom: 10px;
+}
+
+img {
+    width: 100%;
+    max-width: 3500px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.instagram-link {
+    display: block;
+    margin-top: 5px;
+    text-decoration: none;
+    color: grey;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ff4081;
+    color: white;
+    margin-top: 40px;
+    border-radius: 10px;
+    width: auto;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    nav a {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    section, .video-container, footer {
+        width: 95%;
+    }
+
+    .video-container video {
+        max-width: 100%;
+    }
+}
+
+</style>
+
+<nav>
+    <a href="#home-page">Home Page</a>
+    <a href="daftar-produk.html">product</a>   
+    <a href="#video">Video</a>
+    <a href="#news">News</a>
+    <a href="#about-us">About Us</a>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="head">
+            <img src="background.jpg" alt="background" class="image">
+            <div class="text-overlay">FIFAS 8EAUTY SKINCARE</div>
+        </div>
+    </div>
+</div>
+
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="welcome">
+                <section id="home-page">
+                    <h2>TAKE CARE OF YOUR SKIN, LOVE YOURSELF!!!</h2>
+                    <p>Welcome to FIFAS 8EAUTY SKINCARE - the place where beauty and skin care meet! We believe that everyone deserves to have healthy, glowing skin. 
+                        Here, you will find a variety of high quality skincare products, from hydrating serums to soothing night creams. Each of our products is carefully designed, 
+                        using the best natural ingredients to provide optimal results. Join our community and find the right skincare routine for you. Because true beauty starts with proper care!</p>
+                </section>
+            </div>
+        </div>
+    </div>
+</main>
+
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="videocontainer">
+                <section id="video">
+                    <h2>Watch Our Videos</h2>
+                    <div class="video-text-wrapper1">
+                        <video autoplay loop controls muted width="600">
+                            <source src="videotron1.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-description1">
+                            <h3>Learn More About Our Products</h3>
+                            <p>Our skincare products are made with the highest quality ingredients, tailored to meet the needs of various skin types. 
+                                Watch our video to learn more about how to use our products and achieve the best results for your skin. Remember, consistency is key for glowing, healthy skin!</p>
+                        </div>
+                    </div>
+                    <div class="video-text-wrapper2">
+                        <video autoplay loop controls muted width="600">
+                            <source src="videotron2.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-description2">
+                            <p>Its lightweight texture makes the product easy to absorb without leaving a sticky feel, making it an ideal choice for everyday use, even for sensitive skin. 
+                                The antioxidant content in it also functions to protect the skin from free radicals and slow down the signs of premature aging.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</main>
+
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="news">
+                <section id="news">
+                    <h2>News!!!</h2>
+                    <div class="news-content">
+                        <div class="image1">
+                            <img src="1.jpeg" alt="artis tidak dikenali">
+                        </div>
+                        <div class="news1">
+                            <p>"I was very impressed with the Radiant Glow Exfoliating Scrub! After using this scrub once a week for a month, I noticed a noticeable difference in the texture of my skin. 
+                                The exfoliator granules are soft, so it doesn't make my skin feel rough or irritated. After rinsing, my skin feels fresh, clean, and looks brighter."</p>
+                        </div>
+                    </div>
+
+                    <div class="news-content">
+                        <div class="image2">
+                            <img src="2.jpeg" alt="artis baru">
+                        </div>
+                        <div class="news2">
+                            <p>"I also like that this product contains natural ingredients, and I don't experience any irritation at all. At an affordable price, the results far exceeded my expectations. 
+                                I recommend this serum to anyone who wants to brighten their skin and reduce signs of aging."</p>
+                        </div>
+                    </div>
+
+                    <div class="news-content">
+                        <div class="image3">
+                            <img src="3.jpeg" alt="artis di acara peluncuran">
+                        </div>
+                        <div class="news3">
+                            <p>"I've tried a lot of serums, but the Radiant Glow Vitamin C Serum is completely different. After using this product for three weeks, I noticed a difference 
+                                which is significant on my skin. My skin tone became more even and radiant. The serum absorbs quickly and is non-sticky, which makes it comfortable to use under makeup."</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</main>
+
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="about-us">
+                <section id="about-us">
+                    <h2>About Us</h2>
+                    <h3>FIFAS 8EAUTY SKINCARE SHOP CREW</h3>
+                    <div class="image-container">
+                        <div class="image-item">
+                            <img src="AGUS.jpg" alt="agus">
+                            <p>Agus Salim</p>
+                            <p>230209502033</p>
+                            <a href="https://www.instagram.com/ags_1im?igsh=dGNubTBkeGRrY21z" target="_blank" class="instagram-link"> @ags_1im </a>
+                        </div>
+                        <div class="image-item">
+                            <img src="SAFINA.jpg" alt="safina">
+                            <p>Siti Shafina Arfani</p>
+                            <p>230209502028</p>
+                            <a href="https://www.instagram.com/shafinarfnii?igsh=MTFnNzRiZHZsanY4eg==" target="_blank" class="instagram-link"> @shafinarfnii </a>
+                        </div>
+                        <div class="image-item">
+                            <img src="ILMY.jpg" alt="limey">
+                            <p>Nurul Ilmi</p>
+                            <p>230209502032</p>
+                            <a href="https://www.instagram.com/nrulilmyy?igsh=ejl6OWU1ZW1uc3Mw" target="_blank" class="instagram-link"> @nrulilmyy </a>
+                        </div>
+                        <div class="image-item">
+                            <img src="FARDAN.jpg" alt="edann">
+                            <p>Fardan Alsyah Muhram</p>
+                            <p> 230209502029</p>
+                            <a href="https://www.instagram.com/f4rdn10_?igsh=cTZjYm10cTBieTVu" target="_blank" class="instagram-link"> @f4rdn10_ </a>
+                        </div>
+                        <div class="image-item">
+                            <img src="FIKRI.jpg" alt="fikri">
+                            <p>Muh Fikri Ainul Yakin</p>
+                            <p>230209502015</p>
+                            <a href="https://www.instagram.com/muhhfkrii?igsh=ODh3dHBkZXM2Nndv" target="_blank" class="instagram-link"> @muhhfkrii </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer aria-label="Footer">
+    <p>&copy; 2024 HAK CIPTA KELOMPOK 8EAUTY SKINCARE</p>
+</footer>
+
+
+</body>
+</html>
